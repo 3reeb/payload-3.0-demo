@@ -41,5 +41,7 @@ next-env.d.ts
 .env
 
 /media
-
+/models
+/packages
+.npmrc
 tsconfig.json

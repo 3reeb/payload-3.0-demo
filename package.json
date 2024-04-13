@@ -17,11 +17,14 @@
     "node": ">=18.19.0"
   },
   "dependencies": {
+    "@3reeb/plugin": "0.0.3",
+    "@3reeb/examination-system": "github:3reeb/examination-system",
     "@payloadcms/db-mongodb": "3.0.0-beta.2",
     "@payloadcms/db-postgres": "3.0.0-beta.2",
     "@payloadcms/next": "3.0.0-beta.2",
     "@payloadcms/richtext-lexical": "3.0.0-beta.2",
     "@payloadcms/richtext-slate": "3.0.0-beta.2",
+    "@payloadcms/translations": "3.0.0-beta.2",
     "@payloadcms/ui": "3.0.0-beta.2",
     "cross-env": "^7.0.3",
     "next": "14.2.0-canary.23",
@@ -31,14 +34,25 @@
     "sharp": "0.32.6"
   },
   "devDependencies": {
+    "@payloadcms/eslint-config": "workspace:*",
     "@types/node": "^20.11.25",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.0",
     "tsx": "^4.7.1",
     "typescript": "^5.4.2"
   },
-  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
+  "workspaces": [
+    "packages/*",
+    "packages/*/dev",
+    "models/*"
+  ],
+  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2",
+  "main": "index.js",
+  "repository": "https://github.com/3reeb/payload-3.0-demo.git",
+  "author": "3reeb <osamaolufi@gmail.com>",
+  "license": "MIT"
 }
