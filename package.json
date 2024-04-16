@@ -14,9 +14,7 @@
     "clean": "rimraf dist && rimraf dev/yarn.lock && rimraf **/*.d.ts **/*.d.ts.map **/*.js **/*.js.map"
 
   },
-  "engines": {
-    "node": ">=18.19.0"
-  },
+
   "dependencies": {
     "@tidyjs/tidy":"*",
     "@3reeb/utilities":"^0.0.2",
