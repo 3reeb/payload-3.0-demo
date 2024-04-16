@@ -24,7 +24,7 @@ import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { buildConfig } from 'payload/config'
 import sharp from 'sharp'
 import { fileURLToPath } from 'url'
-import {samplePlugin} from '@3reeb/plugin'
+import { plugin as  stateLettersMonitoring } from '@3reeb/state-letters-monitoring'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -121,6 +121,7 @@ export default buildConfig({
   // for this before reaching 3.0 stable
   sharp,
   plugins: [
-    samplePlugin({enabled:true})
-  ]
+    stateLettersMonitoring({})
+  ],
+  
 })

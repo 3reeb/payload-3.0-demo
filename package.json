@@ -11,7 +11,9 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "generate:types": "payload generate:types",
-    "standalone-script": "tsx ./src/scripts/standalone-script.ts"
+    "standalone-script": "tsx ./src/scripts/standalone-script.ts",
+    "clean": "rimraf dist && rimraf dev/yarn.lock && rimraf **/*.d.ts **/*.d.ts.map **/*.js **/*.js.map"
+
   },
   "engines": {
     "node": ">=18.19.0"
@@ -21,6 +23,11 @@
     "@3reeb/utilities":"^0.0.2",
     "@3reeb/ui": "^0.0.9",
     "@3reeb/fields": "^0.0.7",
+
+    "@3reeb/state-letters-monitoring":"^0.0.1",
+
+
+
     "@3reeb/examination-system": "github:3reeb/examination-system",
     "@payloadcms/db-mongodb": "^3.0.0-beta.10",
     "@payloadcms/db-postgres": "^3.0.0-beta.10",

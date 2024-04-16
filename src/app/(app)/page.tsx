@@ -1,5 +1,5 @@
-import Example from '@/components/Example'
-import Link from 'next/link'
+// import Example from '@/components/Example'
+// import Link from 'next/link'
 import React from 'react'
 
 const Page = () => {
@@ -25,18 +25,18 @@ const Page = () => {
 
       <p>
         <strong>
-          Payload is running at <Link href="/admin">/admin</Link>
+          {/* Payload is running at <Link href="/admin">/admin</Link> */}
         </strong>
       </p>
 
       <p>
-        <Link href="/my-route" target="_blank">
+        {/* <Link href="/my-route" target="_blank">
           /my-route
-        </Link>{' '}
+        </Link>{' '} */}
         contains an example of a custom route running the Local API.
       </p>
 
-      <Example />
+      {/* <Example /> */}
 
       <p>You can use the Local API in your server components like this:</p>
       <pre>
