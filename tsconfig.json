@@ -1,19 +1,35 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "composite":true,
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "declaration": true,
+    "declarationMap": true,
+    "target": "esnext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
+    "checkJs": false,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noEmit": false,
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": false,
+    "baseUrl": ".",
+    "types": [
+      "jest",
+      "node",
+      "@types/jest"
+    ],
     "incremental": true,
+    "isolatedModules": true,
     "plugins": [
       {
         "name": "next"
@@ -21,12 +37,41 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@payload-config": ["./payload.config.ts"]
-    }
+      "@payload-config": ["./payload.config.ts"],
+      "@/payload-types": [
+        "./payload-types"
+      ],
+      "@3reen/state-letters-monitoring": [
+        "./packages/state-letters-monitoring/src"
+      ],
+      "react": [
+        "./node_modules/@types/react"
+      ],
+    //   "@3reeb/ui": ["./packages/3reeb-ui/dist"] ,
+    // "@3reeb/utilities": ["./packages/utilities/dist"] ,
+    // "@3reeb/fields": ["./packages/3reeb-fields/dist"],
+    // "@3reeb/blocks": ["./packages/3reeb-blocks/dist"]
+      
+      
+      
+    },
+    "composite": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"],
-  "references": [
-    // if your tsconfig is something different
+  "exclude": [
+    "dist",
+    "build",
+    "temp",
+    "node_modules",
+    "models",
+    "packages"
   ]
+  // ,
+  // "references": [
+  //   { "path": "./packages/3reeb-ui" },
+  //   { "path": "./packages/3reeb-fields" },
+  //   { "path": "./packages/3reeb-blocks" },
+  //   {"path": "./packages/state-letters-monitoring"}
+  //   // Add references to all your packages here
+  // ]
 }
