@@ -107,7 +107,6 @@
     "models/*",
     "packages/*"
   ],
-  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2",
   "main": "index.js",
   "repository": "https://github.com/3reeb/payload-3.0-demo.git",
   "author": "3reeb <osamaolufi@gmail.com>",
