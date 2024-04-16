@@ -2,7 +2,6 @@
   "name": "next-latest-starter",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
     "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
@@ -28,7 +27,6 @@
 
 
 
-    "@3reeb/examination-system": "github:3reeb/examination-system",
     "@payloadcms/db-mongodb": "^3.0.0-beta.10",
     "@payloadcms/db-postgres": "^3.0.0-beta.10",
     "@payloadcms/next": "^3.0.0-beta.10",
@@ -103,10 +101,7 @@
     "@swc/register": "0.1.10",
     "@swc/core":"1.4.13"
   },
-  "workspaces": [
-    "models/*",
-    "packages/*"
-  ],
+ 
   "main": "index.js",
   "repository": "https://github.com/3reeb/payload-3.0-demo.git",
   "author": "3reeb <osamaolufi@gmail.com>",
