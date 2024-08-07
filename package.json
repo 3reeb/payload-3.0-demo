@@ -20,7 +20,6 @@
     "node": "^18.20.2 || >=20.9.0"
   },
   "dependencies": {
-    "@3reeb/ui":"0.0.33",
     "@payloadcms/db-mongodb": "3.0.0-beta.71",
     "@payloadcms/db-postgres": "3.0.0-beta.71",
     "@payloadcms/next": "3.0.0-beta.71",
